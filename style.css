@@ -1,0 +1,179 @@
+div.categories {
+    width: 100%;
+    height: 100vh;
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+div.body {
+    display: flex;
+    height: 80%;
+}
+
+div.options {
+    background-color: #f1f1f1;
+    padding: 0px;
+    
+}
+
+div.details {
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: scroll;
+    padding:8px;
+}
+
+div.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+span.option-name {
+    font-size: 6px;
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    color: #5a788f;
+}
+
+img.option-img {
+    width: 25px;
+    height: 25px;
+}
+
+div.section {
+
+}
+
+h3.section-name {
+    margin: 0;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px;
+    color: #272727;
+    font-family: Lucida Sans Unicode;
+}
+
+div.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+div.section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+div.section-item-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    
+}
+
+span.section-item-name {
+    font-size: 10px;
+    font-family: system-ui;
+}
+
+
+.active-tab{
+    background-color: white;
+    border-left:3px solid blue;
+}
+
+.active-tab .option-name{
+    color:blue;
+}
+
+
+.header .all-categories{
+     font-family: Lucida Sans Unicode;
+}
+
+
+/* for desktop */
+@media only screen and (min-width:600px) and (min-height:300px){
+  .details .section .section-name{
+    font-size:15px;
+  }
+
+  .section-item .section-item-img{
+       width:50px;
+       height:50px;
+  }
+
+  .section-item .section-item-name{
+      font-size:13px;
+  }
+
+
+  .option .option-img{
+    width:45px;
+    height:38px;
+  }
+
+  .header .all-categories{
+     font-size:18px;
+  }
+
+  div.section-item {
+    padding: 10px;
+  }
+
+
+  div.section{
+    margin-bottom:100px;
+  }
+} 
+/* for desktop */
+
+
+
+/*for mobiles*/
+@media only screen and (max-width:599px){
+
+    .section-item .section-item-img{
+        width: 105px;
+        height: 76px;
+   }
+
+   .section-item{
+       padding:25px;
+   }
+
+   .header .all-categories{
+    font-size:12px;
+ }
+
+ div.section-item {
+   padding: 5px;
+ }
+
+
+ div.section{
+    margin-bottom:80px;
+ }
+}
+
+
+
+/*print state*/
+@media only print{
+     div.options{
+        display:none;
+     }
+} 
